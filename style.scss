@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;500;600&display=swap");
+
+@import "./css/buttons";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    // font-family: 'Noto Sans', sans-serif;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+// Scrollbar
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4275fa;
+    border-radius: 10px;
+
+    &:hover {
+        background: #3d5fb3;
+    }
+}
+
+section {
+    padding: 60px 0;
+}
+
+.section-title {
+    color: #4275fa;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+}
+
+.title {
+    color: #2e2d56;
+    font-size: 36px;
+    line-height: 54px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+}
+
+.navbar {
+    padding: 1em 0;
+
+    &.sticky {
+        background: #fff;
+        box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+
+        .navbar-brand {
+            color: #4275fa;
+        }
+
+        .bx-menu-alt-left {
+            color: #4275fa;
+        }
+
+        .nav-link {
+            color: #000;
+        }
+    }
+
+    .navbar-toggler {
+        font-size: 38px;
+
+        &:focus {
+            box-shadow: none;
+        }
+    }
+
+    .navbar-brand {
+        color: #fff;
+    }
+
+    .bx-menu-alt-left {
+        color: #fff;
+    }
+    .navbar-nav {
+        background: #fff;
+        border-radius: 8px;
+
+        .nav-link {
+            color: #000;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.06em;
+        }
+    }
+}
+
+.hero {
+    padding-top: 150px;
+    background: url(../images/circle1.png), linear-gradient(126.69deg, #4275fa 6.42%, rgba(17, 2, 198, 0.87) 104.03%);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 33px;
+        letter-spacing: 0.03em;
+    }
+
+    .sub-title {
+        font-size: 48px;
+        line-height: 48px;
+        font-weight: 600;
+        letter-spacing: 0.06em;
+    }
+
+    hr {
+        opacity: 1;
+        width: 100px;
+        height: 4px;
+    }
+
+    .desc {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 500;
+        letter-spacing: 0.06em;
+    }
+
+    .cta {
+        display: flex;
+        gap: 32px;
+    }
+}
+
+svg {
+    width: 100%;
+    margin-top: -70px;
+}
+
+.about {
+    .desc {
+        color: #5f5379;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.06em;
+    }
+
+    .row {
+        --bs-gutter-x: 0.5rem;
+    }
+
+    .card {
+        background-color: #f1f1f1;
+        border: none;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0px 4px 22px rgba(0, 0, 0, 0.13);
+        }
+
+        .card-body {
+            padding: 1rem 0.5rem;
+        }
+
+        .card-title {
+            font-size: 28px;
+            color: #4275fa;
+        }
+
+        .card-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+
+            span {
+                color: #7e7e7e;
+            }
+        }
+    }
+}
+
+.skills {
+    img {
+        position: relative;
+        margin-top: -40px;
+        margin-left: 30px;
+        width: 70px;
+    }
+
+    .row {
+        row-gap: 48px;
+    }
+
+    .accordion {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        &.sticky {
+            background: #fff;
+
+            .navbar-nav {
+                background: none;
+
+                .nav-link {
+                    color: #4275fa;
+
+                    &:hover {
+                        color: darken($color: #4275fa, $amount: 30%);
+                    }
+                }
+            }
+        }
+        .navbar-nav {
+            background: none;
+
+            .nav-link {
+                color: #fff;
+                padding-left: 32px;
+            }
+        }
+    }
+
+    .hero {
+        background-size: 100%;
+        padding-top: 80px;
+    }
+
+    svg {
+        margin-top: -106px;
+    }
+
+    .about {
+        .row {
+            --bs-gutter-x: 1rem;
+        }
+
+        .card {
+            .card-subtitle {
+                font-size: 16px;
+            }
+        }
+    }
+}
