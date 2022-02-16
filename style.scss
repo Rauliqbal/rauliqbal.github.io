@@ -207,6 +207,76 @@ svg {
     }
 }
 
+.portfolio {
+    .content {
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 13px;
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+
+            .overlay {
+                opacity: 4;
+            }
+
+            .content-details {
+                top: 50%;
+                left: 50%;
+                opacity: 1;
+            }
+        }
+
+        .overlay {
+            background: rgba(45, 134, 218, 0.664);
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            transition: all 0.4s ease-in-out 0s;
+        }
+
+        .content-details {
+            position: absolute;
+            text-align: center;
+            padding-left: 1em;
+            padding-right: 1em;
+            width: 100%;
+            top: 80%;
+            left: 50%;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+
+            h3 {
+                color: #fff;
+                font-weight: 600;
+                text-transform: capitalize;
+            }
+
+            .icons {
+                font-size: 24px;
+                padding: 8px;
+                color: #000;
+                background: #fff;
+                margin: 0 8px;
+                border-radius: 8px;
+
+                &:hover {
+                    background: #4275fa;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
 @media (min-width: 992px) {
     .navbar {
         &.sticky {
