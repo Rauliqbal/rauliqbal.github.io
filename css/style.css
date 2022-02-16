@@ -84,7 +84,7 @@ section {
 
 .section-title {
   color: #4275fa;
-  font-size: 24px;
+  font-size: 22px;
   line-height: 36px;
   font-weight: 500;
   letter-spacing: 0.16em;
@@ -92,10 +92,10 @@ section {
 
 .title {
   color: #2e2d56;
-  font-size: 36px;
+  font-size: 34px;
   line-height: 54px;
   font-weight: 600;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.16em;
 }
 
 .navbar {
@@ -237,19 +237,58 @@ svg {
   color: #7e7e7e;
 }
 
-.skills img {
-  position: relative;
-  margin-top: -40px;
-  margin-left: 30px;
-  width: 70px;
+.skills .card {
+  border: none;
+  border-radius: 0;
+  background: #f1f1f1;
 }
 
-.skills .row {
-  row-gap: 48px;
+.skills .card:hover {
+  background: #436edb;
 }
 
-.skills .accordion {
-  margin-top: 60px;
+.skills .card:hover .card-body .icons {
+  color: #fff;
+}
+
+.skills .card:hover .card-body .card-title {
+  color: #fff;
+}
+
+.skills .card:hover .card-body a {
+  color: #fff;
+}
+
+.skills .card .card-body .icons {
+  color: #2e2d56;
+  font-size: 42px;
+  margin-top: 32px;
+  margin-bottom: 14px;
+}
+
+.skills .card .card-body .card-title {
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  color: #2e2d56;
+  font-weight: 600;
+}
+
+.skills .card .card-body a {
+  text-decoration: none;
+  color: #4275fa;
+}
+
+.skills .card .card-body a span {
+  font-size: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 20px;
+}
+
+.skills .card .card-body a:hover i {
+  -webkit-transform: translateX(4px);
+          transform: translateX(4px);
 }
 
 .portfolio .content {
@@ -272,6 +311,10 @@ svg {
   top: 50%;
   left: 50%;
   opacity: 1;
+}
+
+.portfolio .content img {
+  width: 100%;
 }
 
 .portfolio .content .overlay {
