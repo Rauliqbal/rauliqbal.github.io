@@ -3,8 +3,8 @@
   color: #4275fa;
   background-color: #fff;
   padding: 10px 32px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   border: none;
 }
 
@@ -20,11 +20,28 @@
   background-color: #4275fa;
   border: 2px solid #fff;
   padding: 8px 32px;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .btn-light:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.btn-blue {
+  color: #fff;
+  background: #4275fa;
+  padding: 10px 32px;
+  border-radius: 32px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-blue:hover {
+  color: #f1f1f1;
+  -webkit-box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
 }
@@ -377,6 +394,40 @@ svg {
   color: #fff;
 }
 
+.contact-wrapper {
+  padding: 32px 32px 32px 58px;
+  background: url("../images/circel2.png"), linear-gradient(98.94deg, #4275fa -23.73%, rgba(17, 2, 198, 0.87) 118.38%);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100%;
+}
+
+.form {
+  padding: 32px 32px 58px 32px;
+}
+
+.form .form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #7e7e7e;
+}
+
+footer {
+  background: linear-gradient(98.94deg, #4275fa -23.73%, rgba(17, 2, 198, 0.87) 118.38%);
+}
+
+footer .footer {
+  padding: 24px;
+}
+
+footer .footer .footer-brand {
+  font-family: "Pacifico", cursive !important;
+}
+
+footer .footer h6 {
+  font-size: 14px;
+}
+
 @media (min-width: 992px) {
   section {
     padding: 76px 0;
@@ -441,6 +492,9 @@ svg {
   }
   .skills .desc {
     font-size: 18px;
+  }
+  footer .footer h6 {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */
