@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
 
 @import "./css/buttons";
 @import "./css/colors";
@@ -38,20 +38,19 @@ body {
 }
 
 section {
-    padding: 60px 0;
+    padding: 76px 0;
 }
 
 .section-title {
     color: #4275fa;
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.16em;
 }
 
 .title {
     color: #2e2d56;
-    font-size: 34px;
+    font-size: 28px;
     line-height: 54px;
     font-weight: 600;
     letter-spacing: 0.16em;
@@ -87,6 +86,8 @@ section {
 
     .navbar-brand {
         color: #fff;
+        font-size: 1.8rem;
+        font-family: "Pacifico", cursive !important;
     }
 
     .bx-menu-alt-left {
@@ -113,14 +114,14 @@ section {
     background-size: cover;
 
     .title {
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 600;
         line-height: 33px;
         letter-spacing: 0.03em;
     }
 
     .sub-title {
-        font-size: 48px;
+        font-size: 40px;
         line-height: 48px;
         font-weight: 600;
         letter-spacing: 0.06em;
@@ -133,7 +134,7 @@ section {
     }
 
     .desc {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 28px;
         font-weight: 500;
         letter-spacing: 0.06em;
@@ -153,7 +154,7 @@ svg {
 .about {
     .desc {
         color: #5f5379;
-        font-size: 18px;
+        font-size: 16px;
         line-height: 27px;
         letter-spacing: 0.06em;
     }
@@ -192,6 +193,13 @@ svg {
 }
 
 .skills {
+    .desc {
+        color: #5f5379;
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.06em;
+    }
+
     .card {
         border: none;
         border-radius: 0;
@@ -209,8 +217,16 @@ svg {
                     color: $white;
                 }
 
-                a {
-                    color: $white;
+                .btn-icon {
+                    button {
+                        background: none;
+                        border: none;
+                        color: $white;
+                    }
+
+                    i {
+                        color: $white;
+                    }
                 }
             }
         }
@@ -230,20 +246,23 @@ svg {
                 font-weight: 600;
             }
 
-            a {
-                text-decoration: none;
-                color: $blue;
-
-                span {
-                    font-size: 20px;
-                    align-items: center;
-                    line-height: 20px;
+            .btn-icon {
+                button {
+                    background: none;
+                    border: none;
+                    color: $blue;
                 }
 
                 &:hover {
                     i {
+                        color: $white;
                         transform: translateX(4px);
                     }
+                }
+
+                i {
+                    color: $blue;
+                    font-size: 20px;
                 }
             }
         }
@@ -324,7 +343,28 @@ svg {
     }
 }
 
+//=================== Desktop VERSIOn ==============================
 @media (min-width: 992px) {
+    section {
+        padding: 76px 0;
+    }
+
+    .section-title {
+        color: #4275fa;
+        font-size: 22px;
+        line-height: 36px;
+        font-weight: 500;
+        letter-spacing: 0.16em;
+    }
+
+    .title {
+        color: #2e2d56;
+        font-size: 34px;
+        line-height: 54px;
+        font-weight: 600;
+        letter-spacing: 0.16em;
+    }
+
     .navbar {
         &.sticky {
             background: #fff;
@@ -354,6 +394,17 @@ svg {
     .hero {
         background-size: 100%;
         padding-top: 80px;
+
+        .title {
+            font-size: 24px;
+        }
+        .sub-title {
+            font-size: 48px;
+        }
+
+        .desc {
+            font-size: 18px;
+        }
     }
 
     svg {
@@ -361,6 +412,10 @@ svg {
     }
 
     .about {
+        .desc {
+            font-size: 18px;
+        }
+
         .row {
             --bs-gutter-x: 1rem;
         }
@@ -369,6 +424,12 @@ svg {
             .card-subtitle {
                 font-size: 16px;
             }
+        }
+    }
+
+    .skills {
+        .desc {
+            font-size: 18px;
         }
     }
 }

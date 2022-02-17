@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&family=Pacifico&family=Poppins:wght@400;500;600&display=swap");
 .btn-primary {
   color: #4275fa;
   background-color: #fff;
@@ -79,20 +79,19 @@ body {
 }
 
 section {
-  padding: 60px 0;
+  padding: 76px 0;
 }
 
 .section-title {
   color: #4275fa;
-  font-size: 22px;
-  line-height: 36px;
+  font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.16em;
 }
 
 .title {
   color: #2e2d56;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 54px;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -131,6 +130,8 @@ section {
 
 .navbar .navbar-brand {
   color: #fff;
+  font-size: 1.8rem;
+  font-family: "Pacifico", cursive !important;
 }
 
 .navbar .bx-menu-alt-left {
@@ -158,14 +159,14 @@ section {
 }
 
 .hero .title {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 33px;
   letter-spacing: 0.03em;
 }
 
 .hero .sub-title {
-  font-size: 48px;
+  font-size: 40px;
   line-height: 48px;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -178,7 +179,7 @@ section {
 }
 
 .hero .desc {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
   font-weight: 500;
   letter-spacing: 0.06em;
@@ -198,7 +199,7 @@ svg {
 
 .about .desc {
   color: #5f5379;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 27px;
   letter-spacing: 0.06em;
 }
@@ -237,6 +238,13 @@ svg {
   color: #7e7e7e;
 }
 
+.skills .desc {
+  color: #5f5379;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.06em;
+}
+
 .skills .card {
   border: none;
   border-radius: 0;
@@ -255,7 +263,13 @@ svg {
   color: #fff;
 }
 
-.skills .card:hover .card-body a {
+.skills .card:hover .card-body .btn-icon button {
+  background: none;
+  border: none;
+  color: #fff;
+}
+
+.skills .card:hover .card-body .btn-icon i {
   color: #fff;
 }
 
@@ -273,22 +287,21 @@ svg {
   font-weight: 600;
 }
 
-.skills .card .card-body a {
-  text-decoration: none;
+.skills .card .card-body .btn-icon button {
+  background: none;
+  border: none;
   color: #4275fa;
 }
 
-.skills .card .card-body a span {
-  font-size: 20px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 20px;
-}
-
-.skills .card .card-body a:hover i {
+.skills .card .card-body .btn-icon:hover i {
+  color: #fff;
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
+}
+
+.skills .card .card-body .btn-icon i {
+  color: #4275fa;
+  font-size: 20px;
 }
 
 .portfolio .content {
@@ -365,6 +378,23 @@ svg {
 }
 
 @media (min-width: 992px) {
+  section {
+    padding: 76px 0;
+  }
+  .section-title {
+    color: #4275fa;
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+  }
+  .title {
+    color: #2e2d56;
+    font-size: 34px;
+    line-height: 54px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+  }
   .navbar.sticky {
     background: #fff;
   }
@@ -388,14 +418,29 @@ svg {
     background-size: 100%;
     padding-top: 80px;
   }
+  .hero .title {
+    font-size: 24px;
+  }
+  .hero .sub-title {
+    font-size: 48px;
+  }
+  .hero .desc {
+    font-size: 18px;
+  }
   svg {
     margin-top: -106px;
+  }
+  .about .desc {
+    font-size: 18px;
   }
   .about .row {
     --bs-gutter-x: 1rem;
   }
   .about .card .card-subtitle {
     font-size: 16px;
+  }
+  .skills .desc {
+    font-size: 18px;
   }
 }
 /*# sourceMappingURL=style.css.map */
