@@ -109,7 +109,7 @@ section {
 .hero {
     padding-top: 150px;
     background: url(../images/circle1.png), linear-gradient(126.69deg, #4275fa 6.42%, rgba(17, 2, 198, 0.87) 104.03%);
-    background-position: top center;
+    background-position: 80%;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -348,8 +348,16 @@ svg {
     border-radius: 0;
     background: url("../images/circel2.png"), linear-gradient(98.94deg, #4275fa -23.73%, rgba(17, 2, 198, 0.87) 118.38%);
     background-repeat: no-repeat;
-    background-position: top left;
-    background-size: 100%;
+    background-position: bottom left;
+    background-size: 70%, 100%;
+
+    h5 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 
     .icons {
         font-size: 32px;
@@ -373,7 +381,8 @@ svg {
         border-bottom: 2px solid #7e7e7e;
 
         &:focus {
-            box-shadow: 0 4px 4px rgba(90, 175, 255, 0.411);
+            border-bottom: 2px solid #4275fa;
+            box-shadow: none;
         }
     }
 }
@@ -444,6 +453,7 @@ footer {
     .hero {
         background-size: 100%;
         padding-top: 80px;
+        background-position: top center;
 
         .title {
             font-size: 24px;
@@ -486,6 +496,8 @@ footer {
     .contact-wrapper {
         border-radius: 0 13px 13px 0;
         padding: 48px 48px 48px 68px;
+        background-position: top left;
+        background-size: 70%, 100%;
     }
 
     .form {
