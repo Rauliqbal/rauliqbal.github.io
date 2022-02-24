@@ -395,21 +395,39 @@ svg {
 }
 
 .contact-wrapper {
-  padding: 32px 32px 32px 58px;
+  padding: 32px 24px;
+  border-radius: 0;
   background: url("../images/circel2.png"), linear-gradient(98.94deg, #4275fa -23.73%, rgba(17, 2, 198, 0.87) 118.38%);
   background-repeat: no-repeat;
   background-position: top left;
   background-size: 100%;
 }
 
+.contact-wrapper .icons {
+  font-size: 32px;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.contact-wrapper .icons:hover {
+  background: #6388e6;
+}
+
 .form {
-  padding: 32px 32px 58px 32px;
+  padding: 32px 24px;
 }
 
 .form .form-control {
   border: none;
   border-radius: 0;
   border-bottom: 2px solid #7e7e7e;
+}
+
+.form .form-control:focus {
+  -webkit-box-shadow: 0 4px 4px rgba(90, 175, 255, 0.411);
+          box-shadow: 0 4px 4px rgba(90, 175, 255, 0.411);
 }
 
 footer {
@@ -492,6 +510,13 @@ footer .footer h6 {
   }
   .skills .desc {
     font-size: 18px;
+  }
+  .contact-wrapper {
+    border-radius: 0 13px 13px 0;
+    padding: 48px 48px 48px 68px;
+  }
+  .form {
+    padding: 48px 68px 48px 48px;
   }
   footer .footer h6 {
     font-size: 16px;
