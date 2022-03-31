@@ -9,6 +9,8 @@
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+        <!-- AOS JS -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- CUSTOM CSS -->
         <link rel="stylesheet" href="css/style.css" />
         <!-- Boxicons CSS -->
@@ -19,16 +21,18 @@
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="#">Rauliqbal</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="bx bx-menu-alt-left"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto align-items-center">
-                        <a class="nav-link mx-3" href="#">Home</a>
-                        <a class="nav-link mx-3" href="#about">About</a>
-                        <a class="nav-link mx-3" href="#skills">Skills</a>
-                        <a class="nav-link mx-3" href="#portfolio">Portfolio</a>
-                        <a class="nav-link mx-3" href="#contact">Contact</a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon top-bar"></span>
+                    <span class="toggler-icon mid-bar"></span>
+                    <span class="toggler-icon bot-bar"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navigation">
+                    <div class="navbar-nav ms-auto align-items-center gap-4 p-4 p-lg-0">
+                        <a class="nav-link" href="#">Home</a>
+                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#skills">Skills</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -37,7 +41,7 @@
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6 align-self-center">
+                    <div class="col-12 col-lg-6 align-self-center" data-aos="fade-up" data-aos-duration="1000" >
                         <h1 class="title text-uppercase text-white">hello, im rauliqbal</h1>
                         <h2 class="sub-title text-white">WEB DESIGNER</h2>
                         <hr class="bg-white" />
@@ -49,7 +53,7 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 position-sticky">
+                    <div class="col-12 col-lg-6 position-sticky" data-aos="fade-down" data-aos-duration="1500">
                         <img class="img-fluid" src="images/hero-img.png" alt="Rauliqbal Front End Developer and UI Designer" />
                     </div>
                 </div>
@@ -78,11 +82,11 @@
         <section class="about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
                         <img class="img-fluid" src="images/about-img.png" alt="i am Muhamad Raul Iqbal a web designer" />
                     </div>
-                    <div class="col-12 col-lg-6 mt-5 mt-lg-0 align-self-center">
-                        <h4 class="section-title text-uppercase">About me</h4>
+                    <div class="col-12 col-lg-6 mt-5 mt-lg-0 align-self-center" data-aos="fade-down" data-aos-duration="1500">
+                        <h4 class="section-title text-uppercase" >About me</h4>
                         <h3 class="title text-capitalize">Web Designer</h3>
                         <p class="desc">My name is Muhamad Raul Iqbal,tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus</p>
                         <p class="desc">My name is Muhamad Raul Iqbal,tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus</p>
@@ -133,14 +137,14 @@
                 <div class="row">
                     <div class="col-12 col-lg-10 mx-auto">
                         <div class="row">
-                            <div class="col-12 col-lg-7 align-self-center">
+                            <div class="col-12 col-lg-7 align-self-center"  data-aos="fade-up" data-aos-duration="1000">
                                 <h4 class="section-title text-uppercase">what i do</h4>
                                 <h3 class="title text-capitalize">specializing in</h3>
                                 <p class="desc">I always prioritize the quality and convenience of consumers to create an attractive and fast website.</p>
                             </div>
                             <div class="col-12 col-lg-5">
                                 <div class="row">
-                                    <div class="col-12">
+                                    <div class="col-12"  data-aos="fade-right" data-aos-duration="1000">
                                         <div class="card">
                                             <div class="card-body">
                                                 <i class="icons bx bx-code-alt"></i>
@@ -204,7 +208,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 mt-4">
+                                    <div class="col-12 mt-4"  data-aos="fade-left"  data-aos-duration="1500">
                                         <div class="card">
                                             <div class="card-body">
                                                 <i class="icons bx bx-vector"></i>
@@ -247,7 +251,7 @@
                     <h3 class="title text-capitalize">Recent Works</h3>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-12 col-lg-4">
+                    <div class="col-12 col-lg-4" data-aos="zoom-in" data-aos-duration="750">
                         <!-- Portfolio New -->
                         <div class="content">
                             <img src="images/needfood-appdesign.png" alt="" />
@@ -263,7 +267,7 @@
                     </div>
                     <div class="col-12 col-lg-8">
                         <div class="row">
-                            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                            <div class="col-12 col-lg-6 mt-4 mt-lg-0"  data-aos="zoom-in" data-aos-duration="1500">
                                 <!-- Portfolio 1 -->
                                 <div class="content">
                                     <img src="images/beliayam-webdesign.png" alt="" />
@@ -277,7 +281,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                            <div class="col-12 col-lg-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-duration="2000">
                                 <!-- Portfolio 2 -->
                                 <div class="content">
                                     <img src="images/luxspace-webdesign.png" alt="" />
@@ -291,7 +295,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 mt-3">
+                            <div class="col-12 col-lg-6 mt-3" data-aos="zoom-in" data-aos-duration="2500">
                                 <!-- Portfolio 3 -->
                                 <div class="content">
                                     <img src="images/travel-webdesign.png" alt="" />
@@ -305,7 +309,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-6 mt-3">
+                            <div class="col-12 col-lg-6 mt-3" data-aos="zoom-in" data-aos-duration="3000">
                                 <!-- Portfolio 4 -->
                                 <div class="content">
                                     <img src="images/clipboard-webdesign.png" alt="" />
@@ -332,14 +336,16 @@
 
             
                 <div class="d-flex align-items-center justify-content-center flex-column flex-lg-row">
-                    <div class="col-12 col-lg-6 contact-wrapper align-self-center text-white">
-                        <h5  class="mb-4">Contact Information</h5>
-                        <p class="desc">Have some project? or maybe just want to say hello? I’d love to hear from you</p>
-                        <h6><i class="bx bxs-user me-2"></i> Muhamad Raul iqbal</h6>
-                        <h6><i class="bx bxs-phone me-2"></i> +62 897-730-2988</h6>
-                        <h6><i class="bx bxs-envelope me-2"></i> muhamadrauliqbal.13@gmail.com</h6>
+                    <div class="col-12 col-lg-6 contact-wrapper " >
+                        <div class="align-self-center text-white" data-aos="fade-right" data-aos-duration="1000">
+                            <h5  >Contact Information</h5>
+                            <p class="desc my-4">Have some project? or maybe just want to say hello? I’d love to hear from you</p>
+                            <h6><i class="bx bxs-user me-2"></i> Muhamad Raul iqbal</h6>
+                            <h6><i class="bx bxs-phone me-2"></i> +62 897-730-2988</h6>
+                            <h6><i class="bx bxs-envelope me-2"></i> muhamadrauliqbal.13@gmail.com</h6>
+                        </div>
 
-                        <div class="row justify-content-between justify-content-lg-start text-center mt-5">
+                        <div class="row justify-content-between justify-content-lg-start text-center mt-5"  data-aos="fade-up" data-aos-duration="1500">
                             <div class="col-2">
                                 <a href="https://dribbble.com/Rauliqbal" target="_blank"><i class='bx bxl-dribbble icons'></i></a>
                             </div>
@@ -358,15 +364,21 @@
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 form align-self-center">
-                        <form>
+                    <div class="col-12 col-lg-6 form align-self-center " >
+                        <form class="needs-validation" novalidate data-aos="fade-left" data-aos-duration="1500">
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label fw-bold">Name</label>
-                                <input type="email" placeholder="Your email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                <label for="validationCustom01" class="form-label fw-bold">Name</label>
+                                <input type="text" placeholder="Your name" class="form-control" id="validationCustom01"  required/>
+                                <div class="valid-feedback">
+                                    Goods
+                                </div>
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputEmail1" class="form-label fw-bold">Email</label>
-                                <input type="email" placeholder="Your email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                                <label for="validationCustom02" class="form-label fw-bold">Email</label>
+                                <input type="email" placeholder="Your email" class="form-control" id="validationCustom02" required />
+                                <div class="invalid-feedback">
+                                    Sorry
+                                </div>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
@@ -388,6 +400,10 @@
         </footer>
 
         <!-- SCRIPT JS -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         <script src="js/main.js"></script>
         <!-- Bootstrap JS -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

@@ -60,7 +60,7 @@ section {
    padding: 1em 0;
 
    &.sticky {
-      background: #fff;
+      background: $white;
       box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
 
       .navbar-brand {
@@ -72,33 +72,93 @@ section {
       }
 
       .nav-link {
-         color: #000;
+         color: $black;
       }
-   }
 
-   .navbar-toggler {
-      font-size: 38px;
-
-      &:focus {
-         box-shadow: none;
+      .navbar-toggler.collapsed .toggler-icon {
+         background: $black;
       }
    }
 
    .navbar-brand {
-      color: #fff;
+      color: $white;
       font-size: 1.8rem;
       font-family: "Pacifico", cursive !important;
    }
 
-   .bx-menu-alt-left {
-      color: #fff;
+   .navbar-toggler,
+   .navbar-toggler:focus,
+   .navbar-toggler:active,
+   .navbar-toggler-icon:focus {
+      outline: none;
+      box-shadow: none;
+      border: 0;
    }
+   .navbar-toggler {
+      width: 20px;
+      height: 20px;
+      position: relative;
+      transition: 0.5s ease-in-out;
+
+      span {
+         margin: 0;
+         padding: 0;
+      }
+
+      .toggler-icon {
+         display: block;
+         position: absolute;
+         height: 3px;
+         width: 100%;
+         background: $black;
+         border-radius: 2px;
+         opacity: 1;
+         left: 0;
+         transform: rotate(0deg);
+         transition: 0.25s ease-in-out;
+      }
+      .mid-bar {
+         margin: 0px;
+      }
+
+      //
+      .top-bar {
+         margin-top: 0px;
+         transform: rotate(-45deg);
+      }
+      .mid-bar {
+         width: 0;
+      }
+      .bot-bar {
+         margin-top: 0px;
+         transform: rotate(45deg);
+      }
+   }
+
+   .navbar-toggler.collapsed {
+      .top-bar {
+         margin-top: -8px;
+         transform: rotate(0deg);
+      }
+      .mid-bar {
+         width: 100%;
+      }
+      .bot-bar {
+         margin-top: 8px;
+         transform: rotate(0deg);
+      }
+
+      .toggler-icon {
+         background: $white;
+      }
+   }
+
    .navbar-nav {
-      background: #fff;
+      background: $white;
       border-radius: 8px;
 
       .nav-link {
-         color: #000;
+         color: $black;
          font-size: 16px;
          font-weight: 500;
          letter-spacing: 0.06em;
@@ -118,7 +178,7 @@ section {
             bottom: 0;
             width: 100%;
             height: 2px;
-            background-color: #fff;
+            background-color: $white;
             transform-origin: bottom right;
             transform: scaleX(0);
             transition: transform 0.5s ease-in-out;
@@ -304,7 +364,7 @@ svg {
       position: relative;
       margin: auto;
       overflow: hidden;
-      border-radius: 13px;
+      border-radius: 8px;
 
       &:hover {
          img {
@@ -351,7 +411,7 @@ svg {
          transform: translate(-50%, -50%);
 
          h3 {
-            color: #fff;
+            color: $white;
             font-weight: 600;
             text-transform: capitalize;
             font-size: 20px;
@@ -360,14 +420,14 @@ svg {
          .icons {
             font-size: 24px;
             padding: 8px;
-            color: #000;
-            background: #fff;
+            color: $black;
+            background: $white;
             margin: 0 8px;
             border-radius: 8px;
 
             &:hover {
                background: #4275fa;
-               color: #fff;
+               color: $white;
             }
          }
       }
@@ -390,6 +450,10 @@ svg {
       font-size: 18px;
    }
 
+   h6 {
+      font-size: 14px;
+   }
+
    .icons {
       font-size: 32px;
       padding: 8px;
@@ -398,7 +462,8 @@ svg {
       border-radius: 50%;
 
       &:hover {
-         background: rgb(99, 136, 230);
+         background: #4274e4;
+         box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
       }
    }
 }
@@ -460,7 +525,7 @@ footer {
 
    .navbar {
       &.sticky {
-         background: #fff;
+         background: $white;
 
          .navbar-nav {
             background: none;
@@ -487,7 +552,7 @@ footer {
          background: none;
 
          .nav-link {
-            color: #fff;
+            color: $white;
          }
       }
    }
@@ -550,6 +615,10 @@ footer {
       padding: 48px 48px 48px 68px;
       background-position: top left;
       background-size: 70%, 100%;
+
+      h6 {
+         font-size: 1rem;
+      }
    }
 
    .form {
