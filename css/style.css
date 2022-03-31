@@ -92,11 +92,11 @@ body {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3d5fb3;
+  background: #618eff;
 }
 
 section {
-  padding: 76px 0;
+  padding: 120px 0;
 }
 
 .section-title {
@@ -165,6 +165,32 @@ section {
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.06em;
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-link:hover::after {
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 .hero {
@@ -255,6 +281,19 @@ svg {
   color: #7e7e7e;
 }
 
+.skills {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .skills .desc {
   color: #5f5379;
   font-size: 16px;
@@ -264,7 +303,7 @@ svg {
 
 .skills .card {
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
   background: #f1f1f1;
 }
 
@@ -321,6 +360,18 @@ svg {
   font-size: 20px;
 }
 
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .portfolio .content {
   position: relative;
   margin: auto;
@@ -329,8 +380,8 @@ svg {
 }
 
 .portfolio .content:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: rotate(4deg) scale(1.1);
+          transform: rotate(4deg) scale(1.1);
 }
 
 .portfolio .content:hover .overlay {
@@ -378,6 +429,7 @@ svg {
   color: #fff;
   font-weight: 600;
   text-transform: capitalize;
+  font-size: 20px;
 }
 
 .portfolio .content .content-details .icons {
@@ -485,12 +537,20 @@ footer .footer h6 {
   .navbar.sticky .navbar-nav .nav-link:hover {
     color: #042f9f;
   }
+  .navbar.sticky .navbar-nav .nav-link:hover::after {
+    -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+  }
+  .navbar.sticky .navbar-nav .nav-link::after {
+    background-color: #042f9f;
+  }
   .navbar .navbar-nav {
     background: none;
   }
   .navbar .navbar-nav .nav-link {
     color: #fff;
-    padding-left: 32px;
   }
   .hero {
     background-size: 100%;
@@ -520,6 +580,9 @@ footer .footer h6 {
   }
   .skills .desc {
     font-size: 18px;
+  }
+  .portfolio .content .content-details h3 {
+    font-size: 22px;
   }
   .contact-wrapper {
     border-radius: 0 13px 13px 0;
