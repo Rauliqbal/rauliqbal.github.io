@@ -140,6 +140,10 @@ section {
   background: #2e2d56;
 }
 
+.navbar.sticky .navbar-toggler .toggler-icon {
+  background: #2e2d56;
+}
+
 .navbar .navbar-brand {
   color: #fff;
   font-size: 1.8rem;
@@ -174,7 +178,7 @@ section {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #2e2d56;
+  background: #fff;
   border-radius: 2px;
   opacity: 1;
   left: 0;

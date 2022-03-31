@@ -78,6 +78,12 @@ section {
       .navbar-toggler.collapsed .toggler-icon {
          background: $black;
       }
+
+      .navbar-toggler {
+         .toggler-icon {
+            background: $black;
+         }
+      }
    }
 
    .navbar-brand {
@@ -110,7 +116,7 @@ section {
          position: absolute;
          height: 3px;
          width: 100%;
-         background: $black;
+         background: $white;
          border-radius: 2px;
          opacity: 1;
          left: 0;

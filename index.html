@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Rauliqbal Freelancer Front-End Developer and UI Designer" />
+        <meta name="description" content="Rauliqbal Freelancer Front-End Developer and UI Designer from Indonesian" />
         <meta name="theme-color" content="#4275fa">
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
         <!-- Bootstrap CSS -->
@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <!-- Boxicons CSS -->
         <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-        <title>Rauliqbal WebDev.</title>
+        <title>Rauliqbal. - Site</title>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -142,9 +142,9 @@
                                 <h3 class="title text-capitalize">specializing in</h3>
                                 <p class="desc">I always prioritize the quality and convenience of consumers to create an attractive and fast website.</p>
                             </div>
-                            <div class="col-12 col-lg-5">
+                            <div class="col-12 col-lg-5" data-aos="fade-down" data-aos-duration="1000">
                                 <div class="row">
-                                    <div class="col-12"  data-aos="fade-right" data-aos-duration="1000">
+                                    <div class="col-12">
                                         <div class="card">
                                             <div class="card-body">
                                                 <i class="icons bx bx-code-alt"></i>
@@ -208,7 +208,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-12 mt-4"  data-aos="fade-left"  data-aos-duration="1500">
+                                    <div class="col-12 mt-4"  >
                                         <div class="card">
                                             <div class="card-body">
                                                 <i class="icons bx bx-vector"></i>
@@ -339,7 +339,8 @@
                     <div class="col-12 col-lg-6 contact-wrapper " >
                         <div class="align-self-center text-white" data-aos="fade-up" data-aos-duration="1500">
                             <h5  >Contact Information</h5>
-                            <p class="desc my-4">Have some project? or maybe just want to say hello? I’d love to hear from you</p>
+                            <p class="desc my-4">Have some project? or maybe just want to discuss your project,
+                                I help you as much as I can</p>
                             <h6><i class="bx bxs-user me-2"></i> Muhamad Raul iqbal</h6>
                             <h6><i class="bx bxs-phone me-2"></i> +62 897-730-2988</h6>
                             <h6><i class="bx bxs-envelope me-2"></i> muhamadrauliqbal.13@gmail.com</h6>
@@ -367,22 +368,25 @@
                     <div class="col-12 col-lg-6 form align-self-center " >
                         <form class="needs-validation" novalidate data-aos="fade-down" data-aos-duration="1500">
                             <div class="mb-3">
-                                <label for="validationCustom01" class="form-label fw-bold">Name</label>
-                                <input type="text" placeholder="Your name" class="form-control" id="validationCustom01"  required/>
-                                <div class="valid-feedback">
-                                    Goods
+                                <label for="inputName" class="form-label fw-bold">Name</label>
+                                <input type="text" placeholder="Your name" class="form-control" id="inputName"  required/>
+                                <div class="invalid-feedback">
+                                    Please enter your name
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <label for="validationCustom02" class="form-label fw-bold">Email</label>
-                                <input type="email" placeholder="Your email" class="form-control" id="validationCustom02" required />
+                                <label for="inputEmail" class="form-label fw-bold">Email</label>
+                                <input type="email" placeholder="Your email" class="form-control" id="inputEmail" required />
                                 <div class="invalid-feedback">
-                                    Sorry
+                                    Please enter your email
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
-                                <textarea placeholder="Your message" class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                                <textarea placeholder="Your message" class="form-control" id="exampleFormControlTextarea1" rows="1" required></textarea>
+                                <div class="invalid-feedback">
+                                    Please enter your message 
+                                </div>
                             </div>
                             
                             <button type="submit" class="btn btn-blue mt-4">Send Message</button>
@@ -394,7 +398,7 @@
 
         <footer>
             <div class="footer text-center text-white">
-                <h4 class="footer-brand">Rauliqbal</h4>
+                <h5 class="footer-brand">Rauliqbal</h5>
             <h6>COPYRIGHT © 2022 DESIGN BY RAULIQBAL</h6>
             </div>
         </footer>
