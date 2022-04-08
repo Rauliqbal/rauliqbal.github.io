@@ -60,8 +60,9 @@ section {
    padding: 1em 0;
 
    &.sticky {
-      background: $white;
+      background: rgba(255, 255, 255, 0.719);
       box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+      backdrop-filter: blur(8px);
 
       .navbar-brand {
          color: #4275fa;
@@ -550,7 +551,9 @@ footer {
 
    .navbar {
       &.sticky {
-         background: $white;
+         background: rgba(255, 255, 255, 0.719);
+         box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+         backdrop-filter: blur(8px);
 
          .navbar-nav {
             background: none;

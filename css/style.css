@@ -119,9 +119,11 @@ section {
 }
 
 .navbar.sticky {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.719);
   -webkit-box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
           box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 .navbar.sticky .navbar-brand {
@@ -637,7 +639,11 @@ footer .footer h6 {
     letter-spacing: 0.16em;
   }
   .navbar.sticky {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.719);
+    -webkit-box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+            box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
   .navbar.sticky .navbar-nav {
     background: none;
