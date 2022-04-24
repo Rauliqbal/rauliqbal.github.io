@@ -89,6 +89,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background: #4275fa;
   border-radius: 10px;
+  padding: 0 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -135,7 +136,7 @@ section {
 }
 
 .navbar.sticky .nav-link {
-  color: #2e2d56;
+  color: #4275fa;
 }
 
 .navbar.sticky .navbar-toggler.collapsed .toggler-icon {
@@ -231,12 +232,15 @@ section {
 }
 
 .navbar .navbar-nav {
-  background: #fff;
+  background: rgba(255, 255, 255, 0.719);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
   border-radius: 8px;
+  margin-top: 20px;
 }
 
 .navbar .navbar-nav .nav-link {
-  color: #2e2d56;
+  color: #4275fa;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.06em;
@@ -269,7 +273,7 @@ section {
 }
 
 .hero {
-  padding-top: 150px;
+  height: 100vh;
   background: url(../images/circle1.png), linear-gradient(126.69deg, #4275fa 6.42%, rgba(17, 2, 198, 0.87) 104.03%);
   background-position: 80%;
   background-repeat: no-repeat;
@@ -284,7 +288,7 @@ section {
 }
 
 .hero .sub-title {
-  font-size: 40px;
+  font-size: 38px;
   line-height: 48px;
   font-weight: 600;
   letter-spacing: 0.06em;
@@ -673,6 +677,9 @@ footer .footer h6 {
   }
   .navbar .navbar-nav {
     background: none;
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
+    margin-top: 0;
   }
   .navbar .navbar-nav .nav-link {
     color: #fff;
