@@ -77,12 +77,12 @@ body {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #fff;
 }
 
 /* Handle */
@@ -638,6 +638,10 @@ footer .footer h6 {
     font-weight: 600;
     letter-spacing: 0.16em;
   }
+  .navbar .nav-link.active {
+    color: #2e2d56;
+    font-weight: 600;
+  }
   .navbar.sticky {
     background: rgba(255, 255, 255, 0.719);
     -webkit-box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
@@ -662,6 +666,10 @@ footer .footer h6 {
   }
   .navbar.sticky .navbar-nav .nav-link::after {
     background-color: #042f9f;
+  }
+  .navbar.sticky .navbar-nav .nav-link.active {
+    color: #2e2d56;
+    font-weight: 600;
   }
   .navbar .navbar-nav {
     background: none;

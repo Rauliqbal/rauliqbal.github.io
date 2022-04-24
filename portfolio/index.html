@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="description" content="Rauliqbal Freelancer Front-End Developer and UI Designer from Indonesian" />
+      <meta name="keywords" content="Rauliqbal, rauliqbal" />
+      <meta name="theme-color" content="#4275fa" />
+      <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+      <!-- AOS JS -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!-- CUSTOM CSS -->
+      <link rel="stylesheet" href="../css/style.css" />
+      <!-- Boxicons CSS -->
+      <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
+      <title>Rauliqbal - Site</title>
+   </head>
+   <body data-bs-spy="scroll">
+      <nav class="navbar navbar-expand-lg fixed-top">
+         <div class="container">
+            <a class="navbar-brand" href="#">Rauliqbal</a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="toggler-icon top-bar"></span>
+               <span class="toggler-icon mid-bar"></span>
+               <span class="toggler-icon bot-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+               <div class="navbar-nav ms-auto align-items-center gap-4 p-4 p-lg-0">
+                  <a class="nav-link" href="/index.html">Home</a>
+                  <a class="nav-link" href="#about">About</a>
+                  <a class="nav-link" href="#skills">Skills</a>
+                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                  <a class="nav-link" href="#contact">Contact</a>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- START:Portfolio -->
+      <section class="portfolio" id="portfolio">
+         <div class="container">
+            <h2 class="text-center" data-aos="fade-up" data-aos-offset="100">My Portfolio</h2>
+            <div class="row">
+               <div class="text-center mb-4" data-aos="fade-up" data-aos-offset="200">
+                  <a class="btn filter-button" data-filter="all">All projects</a>
+                  <a class="btn filter-button" data-filter="design">Design</a>
+                  <a class="btn filter-button" data-filter="development">Development</a>
+               </div>
+               <br />
+
+               <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design" data-aos="zoom-out" data-aos-offset="300">
+                  <div class="content">
+                     <img class="img-fluid" src="../images/beliayam-webdesign.png" alt="" />
+                     <div class="overlay"></div>
+                     <div class="content-details fadeIn-bottom">
+                        <h3>Beliayam Website</h3>
+                        <!-- Source Code -->
+                        <a href=""><i class="icons bx bx-code"></i></a>
+                        <!-- Live Preview Icons -->
+                        <a href="https://rauliqbal.github.io/beliayamcom/" target="_blank"><i class="icons bx bx-link-external"></i></a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development">
+                  <!-- Portfolio 2 -->
+                  <div class="content">
+                     <img class="img-fluid" src="../images/luxspace-webdesign.png" />
+                     <div class="overlay"></div>
+                     <div class="content-details fadeIn-bottom">
+                        <h3 class="text-capitalize">luxspace landing page</h3>
+                        <!-- Source Code -->
+                        <a href=""><i class="icons bx bx-code"></i></a>
+                        <!-- Live Preview Icons-->
+                        <a href="https://rauliqbal.github.io/luxspace/" target="_blank"><i class="icons bx bx-link-external"></i></a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design">
+                  <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
+               </div>
+
+               <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development">
+                  <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
+               </div>
+
+               <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter development">
+                  <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
+               </div>
+
+               <div class="gallery_product col-lg-4 col-md-6 col-sm-6 col-xs-12 filter design">
+                  <img src="https://source.unsplash.com/collection/190727/" class="img-fluid" />
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- END:Portfolio -->
+
+      <!-- SCRIPT JS -->
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+         AOS.init();
+      </script>
+      <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+      <script src="../js/filtering.js"></script>
+      <script src="../js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   </body>
+</html>

@@ -19,12 +19,12 @@ body {
 // Scrollbar
 /* width */
 ::-webkit-scrollbar {
-   width: 10px;
+   width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-   background: #f1f1f1;
+   background: $white;
 }
 
 /* Handle */
@@ -128,7 +128,6 @@ section {
          margin: 0px;
       }
 
-      //
       .top-bar {
          margin-top: 0px;
          transform: rotate(-45deg);
@@ -550,6 +549,11 @@ footer {
    }
 
    .navbar {
+      .nav-link.active {
+         color: #2e2d56;
+         font-weight: 600;
+      }
+
       &.sticky {
          background: rgba(255, 255, 255, 0.719);
          box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
@@ -573,6 +577,16 @@ footer {
                &::after {
                   background-color: darken($color: #4275fa, $amount: 30%);
                }
+            }
+
+            .nav-link.active {
+               color: #2e2d56;
+               font-weight: 600;
+
+               // &::after {
+               //    transform: scaleX(1);
+               //    width: 100%;
+               // }
             }
          }
       }

@@ -1,0 +1,13 @@
+/* Portfolio */
+
+#portfolio h2 {
+   font-size: 38px;
+   letter-spacing: 4px;
+}
+#portfolio a {
+   color: #4275fa;
+}
+
+#portfolio a:hover {
+   color: #374a7c;
+}
