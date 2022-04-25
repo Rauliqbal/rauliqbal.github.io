@@ -96,6 +96,59 @@ body {
   background: #618eff;
 }
 
+.shape, .shape-blue, .shape-purple, .shape-navy {
+  position: absolute;
+  width: 170px;
+  -webkit-animation: bounce 1.5s infinite alternate;
+          animation: bounce 1.5s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+}
+
+@keyframes bounce {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-120px);
+            transform: translateY(-120px);
+  }
+}
+
+.shape-blue {
+  background-color: #4275fa;
+}
+
+.shape-purple {
+  background-color: #5b59e7af;
+}
+
+.shape-navy {
+  background-color: #102b74;
+}
+
+.shape-left {
+  left: 0;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.shape-right {
+  right: 0;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
 section {
   padding: 120px 0;
 }
@@ -319,17 +372,6 @@ section {
           animation: bounce 1s infinite alternate;
 }
 
-@-webkit-keyframes bounce {
-  from {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  to {
-    -webkit-transform: translateY(-10px);
-            transform: translateY(-10px);
-  }
-}
-
 @keyframes bounce {
   from {
     -webkit-transform: translateY(0);
@@ -418,26 +460,8 @@ svg {
   background: #f1f1f1;
 }
 
-.skills .card:hover {
-  background: #436edb;
-}
-
-.skills .card:hover .card-body .icons {
-  color: #fff;
-}
-
-.skills .card:hover .card-body .card-title {
-  color: #fff;
-}
-
-.skills .card:hover .card-body .btn-icon button {
-  background: none;
-  border: none;
-  color: #fff;
-}
-
-.skills .card:hover .card-body .btn-icon i {
-  color: #fff;
+.skills .card .card-body {
+  padding: 2rem 1.5rem;
 }
 
 .skills .card .card-body .icons {
@@ -461,7 +485,6 @@ svg {
 }
 
 .skills .card .card-body .btn-icon:hover i {
-  color: #fff;
   -webkit-transform: translateX(4px);
           transform: translateX(4px);
 }
