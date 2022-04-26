@@ -168,7 +168,70 @@ section {
   letter-spacing: 0.16em;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #252839;
+  z-index: 99;
+}
+
+#preloader h2 {
+  position: relative;
+  font-size: 48px;
+  font-weight: 600;
+  color: #252839;
+  -webkit-text-stroke: 1px #384b70;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+#preloader h2::before {
+  content: "RAULIQBAL...";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #2153be;
+  -webkit-text-stroke: 0px #3d62b3;
+  border-right: 2px solid #2153be;
+  overflow: hidden;
+  -webkit-animation: text-loader 6s infinite;
+          animation: text-loader 6s infinite;
+}
+
+@-webkit-keyframes text-loader {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
+@keyframes text-loader {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+
 .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
   padding: 1em 0;
 }
 
