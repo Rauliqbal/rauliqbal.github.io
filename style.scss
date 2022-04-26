@@ -154,6 +154,7 @@ section {
    right: 0;
    left: 0;
    padding: 1em 0;
+   z-index: 20;
 
    &.sticky {
       background: rgba(255, 255, 255, 0.719);
