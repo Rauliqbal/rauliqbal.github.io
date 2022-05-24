@@ -112,7 +112,7 @@ section {
 
    h2 {
       position: relative;
-      font-size: 48px;
+      font-size: 32px;
       font-weight: 600;
       color: #252839;
       -webkit-text-stroke: 1px #384b70;
@@ -360,8 +360,8 @@ svg {
    .desc {
       color: #5f5379;
       font-size: 16px;
-      line-height: 27px;
-      letter-spacing: 0.06em;
+      line-height: 28px;
+      letter-spacing: 0.018em;
    }
 
    .row {
@@ -632,6 +632,12 @@ footer {
 @media (min-width: 992px) {
    section {
       padding: 76px 0;
+   }
+
+   #preloader {
+      h2 {
+         font-size: 48px;
+      }
    }
 
    .section-title {
