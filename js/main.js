@@ -1,7 +1,7 @@
 // Navbar Scroll
 window.addEventListener("scroll", function () {
    const nav = this.document.querySelector("nav");
-   nav.classList.toggle("sticky", window.scrollY > 0);
+   nav.classList.toggle("sticky", window.scrollY > 150);
 });
 
 // Form Validation

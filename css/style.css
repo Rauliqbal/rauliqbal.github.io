@@ -606,8 +606,8 @@ svg {
   bottom: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out 0s;
-  transition: all 0.4s ease-in-out 0s;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
 }
 
 .portfolio .content .content-details {
@@ -666,7 +666,7 @@ svg {
 }
 
 .contact-wrapper .icons {
-  font-size: 32px;
+  font-size: 24px;
   padding: 8px;
   text-align: center;
   color: #fff;
@@ -814,6 +814,9 @@ footer .footer h6 {
   }
   .contact-wrapper h6 {
     font-size: 1rem;
+  }
+  .contact-wrapper .icons {
+    font-size: 32px;
   }
   .form {
     padding: 48px 68px 48px 48px;

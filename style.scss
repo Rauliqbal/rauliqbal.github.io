@@ -523,7 +523,7 @@ svg {
          bottom: 0;
          right: 0;
          opacity: 0;
-         transition: all 0.4s ease-in-out 0s;
+         transition: all 0.4s ease-out 0s;
       }
 
       .content-details {
@@ -582,7 +582,7 @@ svg {
    }
 
    .icons {
-      font-size: 32px;
+      font-size: 24px;
       padding: 8px;
       text-align: center;
       color: $white;
@@ -770,6 +770,10 @@ footer {
 
       h6 {
          font-size: 1rem;
+      }
+
+      .icons {
+         font-size: 32px;
       }
    }
 
