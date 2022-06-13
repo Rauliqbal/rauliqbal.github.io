@@ -1,8 +1,30 @@
 // Navbar Scroll
 window.addEventListener("scroll", function () {
    const nav = this.document.querySelector("nav");
-   nav.classList.toggle("sticky", window.scrollY > 150);
+   nav.classList.toggle("sticky", window.scrollY > 0);
 });
+
+// setDarkMode()
+if (localStorage.getItem("theme") == "dark") {
+   setDarkMode();
+
+   if (document.getElementById("darkmode").checked) {
+      localStorage.setItem("checkbox", true);
+   }
+}
+
+function setDarkMode() {
+   let isDark = document.body.classList.toggle("darkmode");
+
+   if (isDark) {
+      setDarkMode.checked = true;
+      localStorage.setItem("theme", "dark");
+      document.getElementById("darkmode").setAttribute("checked", "checked");
+   } else {
+      setDarkMode.checked = true;
+      localStorage.removeItem("theme", "dark");
+   }
+}
 
 // Form Validation
 (function () {
@@ -36,7 +58,7 @@ window.addEventListener("scroll", () => {
       const sectionHeight = current.offsetHeight;
       const sectionTop = current.offsetTop - 100;
       const sectionId = current.getAttribute("id");
-      console.log(sectionId);
+
       if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
          document.querySelector('.navbar-nav a[href*="' + sectionId + '"]').classList.add("active");
       } else {

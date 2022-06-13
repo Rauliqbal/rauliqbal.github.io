@@ -148,41 +148,17 @@ section {
 }
 
 // ============Style Body============
-.navbar {
-   position: fixed;
+.navbar-ri {
+   position: absolute;
    top: 0;
    right: 0;
    left: 0;
-   padding: 1em 0;
+   padding: 1em 4%;
    z-index: 20;
 
-   &.sticky {
-      background: rgba(255, 255, 255, 0.719);
-      box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
-      backdrop-filter: blur(8px);
-
-      .navbar-brand {
-         color: #4275fa;
-      }
-
-      .bx-menu-alt-left {
-         color: #4275fa;
-      }
-
-      .nav-link {
-         color: $blue;
-      }
-
-      .navbar-toggler.collapsed .toggler-icon {
-         background: $black;
-      }
-
-      .navbar-toggler {
-         .toggler-icon {
-            background: $black;
-         }
-      }
-   }
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 
    .navbar-brand {
       color: $white;
@@ -257,36 +233,38 @@ section {
    }
 
    .navbar-nav {
+      padding: 8px 0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      gap: 28px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
       background: rgba(255, 255, 255, 0.719);
       backdrop-filter: blur(8px);
-      border-radius: 8px;
-      margin-top: 20px;
+      border-top: 2px solid #5783e2;
 
       .nav-link {
          color: $blue;
-         font-size: 16px;
-         font-weight: 500;
-         letter-spacing: 0.06em;
          position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
 
-         &:hover {
-            &::after {
-               transform-origin: bottom left;
-               transform: scaleX(1);
-            }
+         &:hover .icons {
+            transform: translateY(-8px);
          }
 
-         &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background-color: $white;
-            transform-origin: bottom right;
-            transform: scaleX(0);
-            transition: transform 0.5s ease-in-out;
+         .icons {
+            font-size: 24px;
+         }
+
+         span {
+            font-size: 12px;
+            font-weight: 500;
+            letter-spacing: 0.06em;
          }
       }
    }
@@ -317,6 +295,7 @@ section {
       opacity: 1;
       width: 100px;
       height: 4px;
+      border-top: none;
    }
 
    .desc {
@@ -612,6 +591,7 @@ svg {
 
 footer {
    background: linear-gradient(98.94deg, #4275fa -23.73%, rgba(17, 2, 198, 0.87) 118.38%);
+   padding-bottom: 68px;
 
    .footer {
       padding: 24px;
@@ -626,10 +606,13 @@ footer {
    }
 }
 
-//
-//
+// DARK MODE
+.darkmode {
+   background-color: #202020;
+}
+
 //=================== Desktop VERSION ==============================
-@media (min-width: 992px) {
+@media (min-width: 990px) {
    section {
       padding: 76px 0;
    }
@@ -656,25 +639,35 @@ footer {
       letter-spacing: 0.16em;
    }
 
-   .navbar {
+   .navbar-ri {
+      padding: 18px 9%;
+
       .nav-link.active {
          color: #2e2d56;
          font-weight: 600;
       }
 
       &.sticky {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
          background: rgba(255, 255, 255, 0.719);
          box-shadow: 0 2px 18px rgba(0, 0, 0, 0.13);
          backdrop-filter: blur(8px);
 
+         .navbar-brand {
+            color: $blue;
+         }
          .navbar-nav {
             background: none;
+            gap: 32px;
 
             .nav-link {
-               color: #4275fa;
+               color: $blue;
 
                &:hover {
-                  color: darken($color: #4275fa, $amount: 30%);
+                  color: darken($color: $blue, $amount: 30%);
 
                   &::after {
                      transform-origin: bottom left;
@@ -699,12 +692,40 @@ footer {
          }
       }
       .navbar-nav {
-         background: none;
-         backdrop-filter: blur(0);
-         margin-top: 0;
+         position: relative;
+         background-color: transparent;
+         border-top: none;
 
          .nav-link {
             color: $white;
+
+            .icons {
+               display: none;
+            }
+
+            span {
+               font-size: 18px;
+            }
+
+            &:hover {
+               &::after {
+                  transform-origin: bottom left;
+                  transform: scaleX(1);
+               }
+            }
+
+            &::after {
+               content: "";
+               position: absolute;
+               left: 0;
+               bottom: 0;
+               width: 100%;
+               height: 2px;
+               background-color: $white;
+               transform-origin: bottom right;
+               transform: scaleX(0);
+               transition: transform 0.5s ease-in-out;
+            }
          }
       }
    }
