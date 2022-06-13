@@ -96,6 +96,10 @@ body {
   background: #618eff;
 }
 
+.waves {
+  fill: #fff;
+}
+
 .shape, .shape-blue, .shape-purple, .shape-navy {
   position: absolute;
   width: 170px;
@@ -706,10 +710,6 @@ footer .footer h6 {
   font-size: 14px;
 }
 
-.darkmode {
-  background-color: #202020;
-}
-
 @media (min-width: 990px) {
   section {
     padding: 76px 0;
@@ -862,5 +862,21 @@ footer .footer h6 {
   footer .footer h6 {
     font-size: 16px;
   }
+}
+
+.darkmode {
+  background-color: #202020;
+}
+
+.darkmode .waves {
+  fill: #202020;
+}
+
+.darkmode .title {
+  color: #1a2c8a;
+}
+
+.darkmode .desc {
+  color: #eaeaea;
 }
 /*# sourceMappingURL=style.css.map */

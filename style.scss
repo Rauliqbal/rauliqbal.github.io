@@ -39,6 +39,10 @@ body {
 }
 
 // ===========Component===========
+.waves {
+   fill: $white;
+}
+
 .shape {
    position: absolute;
    width: 170px;
@@ -606,11 +610,6 @@ footer {
    }
 }
 
-// DARK MODE
-.darkmode {
-   background-color: #202020;
-}
-
 //=================== Desktop VERSION ==============================
 @media (min-width: 990px) {
    section {
@@ -808,5 +807,22 @@ footer {
             font-size: 16px;
          }
       }
+   }
+}
+
+// DARK MODE
+.darkmode {
+   background-color: $dark;
+
+   .waves {
+      fill: $dark;
+   }
+
+   .title {
+      color: #1a2c8a;
+   }
+
+   .desc {
+      color: $dark_white;
    }
 }
