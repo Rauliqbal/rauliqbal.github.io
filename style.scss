@@ -323,11 +323,12 @@ section {
    background-repeat: no-repeat;
    background-size: cover;
 
-   .title {
+   h1 {
       font-size: 20px;
       font-weight: 600;
       line-height: 33px;
       letter-spacing: 0.03em;
+      color: $white;
    }
 
    .sub-title {
@@ -860,8 +861,26 @@ footer {
       fill: $dark;
    }
 
+   .section-title {
+      color: #445ac9;
+   }
+
    .title {
-      color: #1a2c8a;
+      color: #265df3;
+      background-image: -webkit-linear-gradient(92deg, #26d4f3, #925aeb);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-animation: hue 5s infinite ease-out;
+      animation: hue 5s inifinite ease-out;
+
+      @keyframes hue {
+         from {
+            -webkit-filter: hue-rotate(0deg);
+         }
+         to {
+            -webkit-filter: hue-rotate(-360deg);
+         }
+      }
    }
 
    .desc {
