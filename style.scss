@@ -16,6 +16,48 @@ body {
    box-sizing: border-box;
 }
 
+.check-input {
+   position: absolute;
+   opacity: 0;
+}
+
+.check-label {
+   width: 42px;
+   height: 20px;
+   background-color: #7ea6fc;
+   display: flex;
+   border-radius: 50px;
+   align-items: center;
+   justify-content: space-between;
+   padding: 5px;
+   position: relative;
+   transform: scale(1.5);
+
+   .bxs-moon {
+      color: #4a4b4e;
+      font-size: 15px;
+   }
+
+   .bxs-sun {
+      color: #eee125;
+      font-size: 15px;
+   }
+
+   .dot {
+      width: 15px;
+      height: 15px;
+      background-color: $white;
+      position: absolute;
+      top: 2px;
+      left: 4px;
+      border-radius: 50%;
+      transition: transform 0.2s linear;
+   }
+}
+.check-input:checked + .check-label .dot {
+   transform: translateX(19px);
+}
+
 // Scrollbar
 /* width */
 ::-webkit-scrollbar {

@@ -75,6 +75,60 @@ body {
           box-sizing: border-box;
 }
 
+.check-input {
+  position: absolute;
+  opacity: 0;
+}
+
+.check-label {
+  width: 42px;
+  height: 20px;
+  background-color: #7ea6fc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.check-label .bxs-moon {
+  color: #4a4b4e;
+  font-size: 15px;
+}
+
+.check-label .bxs-sun {
+  color: #eee125;
+  font-size: 15px;
+}
+
+.check-label .dot {
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+  position: absolute;
+  top: 2px;
+  left: 4px;
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
+.check-input:checked + .check-label .dot {
+  -webkit-transform: translateX(19px);
+          transform: translateX(19px);
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
