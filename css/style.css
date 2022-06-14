@@ -13,6 +13,12 @@
           box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+  background-color: #063ed0;
+}
+
+.btn-primary:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .btn-light {
@@ -25,8 +31,15 @@
 }
 
 .btn-light:hover {
+  background-color: #063ed0;
+  color: #fff;
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+}
+
+.btn-light:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .btn-blue {
@@ -44,6 +57,12 @@
           box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
   -webkit-transform: translateY(-4px);
           transform: translateY(-4px);
+  background-color: #063ed0;
+}
+
+.btn-blue:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .accordion-button:not(.collapsed) {
@@ -101,7 +120,7 @@ body {
 }
 
 .check-label .bxs-moon {
-  color: #4a4b4e;
+  color: #596570;
   font-size: 15px;
 }
 
@@ -283,6 +302,10 @@ section {
   90% {
     width: 100%;
   }
+}
+
+.switch-darkmode {
+  margin-right: 10px;
 }
 
 .navbar-ri {
@@ -914,51 +937,76 @@ footer .footer h6 {
   .form {
     padding: 48px 68px 48px 48px;
   }
+  footer {
+    padding-bottom: 0px;
+  }
   footer .footer h6 {
     font-size: 16px;
   }
 }
 
 .darkmode {
-  background-color: #202020;
+  background-color: #1f212c;
+}
+
+.darkmode .navbar-ri.sticky {
+  background-color: #1f212c;
 }
 
 .darkmode .waves {
-  fill: #202020;
+  fill: #1f212c;
 }
 
 .darkmode .section-title {
-  color: #445ac9;
+  color: #2c5bff;
 }
 
 .darkmode .title {
-  color: #265df3;
-  background-image: -webkit-linear-gradient(92deg, #26d4f3, #925aeb);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 5s infinite ease-out;
-  animation: hue 5s inifinite ease-out;
-}
-
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-}
-
-@keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
+  color: #eaeaea;
 }
 
 .darkmode .desc {
+  color: #9c9c9e;
+}
+
+.darkmode .about .card {
+  background-color: #292c36;
+}
+
+.darkmode .about .card .card-title {
+  color: #2c5bff;
+}
+
+.darkmode .about .card .card-subtitle {
   color: #eaeaea;
+}
+
+.darkmode .skills .card {
+  background-color: #292c36;
+}
+
+.darkmode .skills .card .icons {
+  color: #2c5bff;
+}
+
+.darkmode .skills .card .card-title {
+  color: #eaeaea;
+}
+
+.darkmode .contact .desc {
+  color: #eaeaea;
+}
+
+.darkmode .contact .form-label {
+  color: #eaeaea;
+}
+
+.darkmode .contact .form-control {
+  background-color: #3f434f;
+  border-radius: 8px;
+  border: none;
+  caret-color: #fff;
+  color: #eaeaea;
+  padding: 12px 16px;
 }
 /*# sourceMappingURL=style.css.map */

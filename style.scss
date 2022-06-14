@@ -34,7 +34,7 @@ body {
    transform: scale(1.5);
 
    .bxs-moon {
-      color: #4a4b4e;
+      color: #596570;
       font-size: 15px;
    }
 
@@ -191,6 +191,10 @@ section {
          }
       }
    }
+}
+
+.switch-darkmode {
+   margin-right: 10px;
 }
 
 // ============Style Body============
@@ -845,6 +849,7 @@ footer {
    }
 
    footer {
+      padding-bottom: 0px;
       .footer {
          h6 {
             font-size: 16px;
@@ -857,33 +862,72 @@ footer {
 .darkmode {
    background-color: $dark;
 
+   .navbar-ri {
+      &.sticky {
+         background-color: $dark;
+      }
+   }
+
    .waves {
       fill: $dark;
    }
 
    .section-title {
-      color: #445ac9;
+      color: $dark_blue;
    }
 
    .title {
-      color: #265df3;
-      background-image: -webkit-linear-gradient(92deg, #26d4f3, #925aeb);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-animation: hue 5s infinite ease-out;
-      animation: hue 5s inifinite ease-out;
+      color: $dark_white;
+   }
 
-      @keyframes hue {
-         from {
-            -webkit-filter: hue-rotate(0deg);
+   .desc {
+      color: $dark_light;
+   }
+
+   .about {
+      .card {
+         background-color: #292c36;
+
+         .card-title {
+            color: $dark_blue;
          }
-         to {
-            -webkit-filter: hue-rotate(-360deg);
+
+         .card-subtitle {
+            color: $dark_white;
          }
       }
    }
 
-   .desc {
-      color: $dark_white;
+   .skills {
+      .card {
+         background-color: #292c36;
+
+         .icons {
+            color: $dark_blue;
+         }
+
+         .card-title {
+            color: $dark_white;
+         }
+      }
+   }
+
+   .contact {
+      .desc {
+         color: $dark_white;
+      }
+
+      .form-label {
+         color: $dark_white;
+      }
+
+      .form-control {
+         background-color: #3f434f;
+         border-radius: 8px;
+         border: none;
+         caret-color: $white;
+         color: $dark_white;
+         padding: 12px 16px;
+      }
    }
 }
