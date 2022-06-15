@@ -4,6 +4,21 @@ window.addEventListener("scroll", function () {
    nav.classList.toggle("sticky", window.scrollY > 0);
 });
 
+// Button To Top
+$(document).ready(function () {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 900) {
+         $("#scroll").fadeIn();
+      } else {
+         $("#scroll").fadeOut();
+      }
+   });
+   $("#scroll").click(function () {
+      $("html, body").animate({ scrollTop: 0 }, 600);
+      return false;
+   });
+});
+
 // setDarkMode()
 if (localStorage.getItem("theme") == "dark") {
    setDarkMode();

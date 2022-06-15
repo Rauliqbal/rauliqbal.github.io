@@ -516,6 +516,7 @@ svg {
    display: flex;
    justify-content: center;
    align-items: center;
+   background-color: #f7fafd;
 
    .content {
       position: relative;
@@ -866,6 +867,14 @@ footer {
       &.sticky {
          background-color: $dark;
       }
+
+      .navbar-nav {
+         .nav-link {
+            &.active {
+               color: #26376d;
+            }
+         }
+      }
    }
 
    .waves {
@@ -910,6 +919,10 @@ footer {
             color: $dark_white;
          }
       }
+   }
+
+   .portfolio {
+      background-color: #202430;
    }
 
    .contact {

@@ -69,3 +69,25 @@
       box-shadow: none;
    }
 }
+
+.btn-top {
+   display: none;
+   position: fixed;
+   font-size: 32px;
+   bottom: 124px;
+   right: 24px;
+   width: 53px;
+   height: 53px;
+   line-height: 56px;
+   text-align: center;
+   background-color: #f1f1f1;
+   border-radius: 50%;
+   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+}
+
+.darkmode {
+   .btn-top {
+      background-color: $dark_blue;
+      color: $dark_white;
+   }
+}
