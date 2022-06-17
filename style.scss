@@ -525,6 +525,7 @@ svg {
       overflow: hidden;
       box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
       border-width: 0px;
+      transition: all 0.2s ease-out;
 
       .card-top {
          position: relative;
@@ -532,7 +533,7 @@ svg {
 
          &:hover {
             img {
-               transform: rotate(4deg) scale(1.1);
+               transform: rotate(2deg) scale(1.1);
             }
 
             .overlay {
@@ -621,6 +622,7 @@ svg {
          .card-social {
             display: flex;
             margin-top: 12px;
+            gap: 8px;
 
             img {
                width: 24px;
@@ -964,6 +966,8 @@ footer {
       background-color: #202430;
 
       .card-ri {
+         box-shadow: none;
+
          .content {
             background-color: #292c36;
 

@@ -677,6 +677,8 @@ svg {
   -webkit-box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
           box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
   border-width: 0px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .portfolio .card-ri .card-top {
@@ -685,8 +687,8 @@ svg {
 }
 
 .portfolio .card-ri .card-top:hover img {
-  -webkit-transform: rotate(4deg) scale(1.1);
-          transform: rotate(4deg) scale(1.1);
+  -webkit-transform: rotate(2deg) scale(1.1);
+          transform: rotate(2deg) scale(1.1);
 }
 
 .portfolio .card-ri .card-top:hover .overlay {
@@ -778,6 +780,7 @@ svg {
   display: -ms-flexbox;
   display: flex;
   margin-top: 12px;
+  gap: 8px;
 }
 
 .portfolio .card-ri .content .card-social img {
@@ -1064,6 +1067,11 @@ footer .footer h6 {
 
 .darkmode .portfolio {
   background-color: #202430;
+}
+
+.darkmode .portfolio .card-ri {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .darkmode .portfolio .card-ri .content {
