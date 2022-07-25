@@ -693,6 +693,7 @@ svg {
 
 .portfolio .card-ri .card-top:hover .overlay {
   opacity: 4;
+  top: 0;
 }
 
 .portfolio .card-ri .card-top:hover .content-details {
@@ -711,12 +712,12 @@ svg {
   height: 100%;
   width: 100%;
   left: 0;
-  top: 0;
+  top: -100%;
   bottom: 0;
   right: 0;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-out 0s;
-  transition: all 0.4s ease-out 0s;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .portfolio .card-ri .card-top .content-details {
