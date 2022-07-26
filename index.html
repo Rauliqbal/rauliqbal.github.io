@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Rauliqbal Resume Website" />
+        <meta name="description" content="Im Raul Iqbal A Front End Developer and Content Creator" />
         <meta name="keywords" content="Rauliqbal, rauliqbal">
         <meta name="theme-color" content="#4275fa">
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
@@ -287,9 +287,17 @@
                     <h4 class="section-title text-uppercase">MY PORTFOLIO</h4>
                     <h3 class="title text-capitalize">Recent Works</h3>
                 </div>
-                <div class="row mt-5" style="row-gap: 24px;">
-                    <div class="col-12 col-md-6 col-lg-4" style="z-index: 2;"  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
-                        <!-- Portfolio 1 -->
+
+                <div class="text-center mt-4">
+                    <button class="btn-filter btn toggle-active filter-button active" onclick="toggleActive(event)" data-filter="all">All</button>
+                    <button class="btn-filter btn toggle-active filter-button mx-2" onclick="toggleActive(event)" data-filter="web">Web</button>
+                    <button class="btn-filter btn toggle-active filter-button" onclick="toggleActive(event)" data-filter="design">design</button>
+                </div>
+
+                <div class="row mt-5">
+
+                     <!-- Portfolio 1 -->
+                    <div class="col-12 col-md-6 col-lg-4 item gallery-product center filter web" style="z-index: 2;"  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/anonime-webdev.webp" alt="Anonime, anime movie streaming online" />
@@ -311,8 +319,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="600"  data-aos-duration="600">
-                        <!-- Portfolio 2 -->
+
+                     <!-- Portfolio 2 -->
+                    <div class="col-12 col-md-6 col-lg-4 item gallery-product center filter design" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="600"  data-aos-duration="600">
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/letscook-webdev.jpg" alt="My Design Website Competition By Beliayamcom " />
@@ -337,9 +346,6 @@
                     
                     
                 </div>
-               <!-- <div class="d-flex justify-content-center">
-                <a href="./portfolio/index.html" class="btn btn-blue mt-4 ">See all</a> -->
-
                </div>
             </div>
         </section>
@@ -414,7 +420,7 @@
         <footer>
             <div class="footer text-center text-white">
                 <h5 class="footer-brand">Rauliqbal</h5>
-            <h6>COPYRIGHT © 2022 DESIGN BY RAULIQBAL</h6>
+             <h6>COPYRIGHT © 2022 DESIGN BY RAULIQBAL</h6>
             </div>
         </footer>
 
@@ -425,6 +431,7 @@
           AOS.init();
         </script>
         <script src="js/main.js"></script>
+        <script src="js/filtering.js"></script>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
