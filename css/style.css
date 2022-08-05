@@ -527,7 +527,6 @@ svg {
 }
 .portfolio .filter-menu li {
   color: #4275fa;
-  background-color: #fff;
   border: 2px #4275fa solid;
   padding: 4px 16px;
   border-radius: 50px;
@@ -906,19 +905,6 @@ footer .footer h6 {
 }
 .darkmode .portfolio {
   background-color: #202430;
-}
-.darkmode .portfolio .btn-filter {
-  color: #fff;
-  background-color: #4275fa;
-  transition: all 0.2s ease-out;
-}
-.darkmode .portfolio .btn-filter.active {
-  background-color: #fff;
-  color: #4275fa;
-}
-.darkmode .portfolio .btn-filter:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  transform: translateY(-2px);
 }
 .darkmode .portfolio .card-ri {
   box-shadow: none;

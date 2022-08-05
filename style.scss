@@ -521,7 +521,6 @@ svg {
    .filter-menu {
       li {
          color: $blue;
-         background-color: $white;
          border: 2px $blue solid;
          padding: 4px 16px;
          border-radius: 50px;
@@ -1018,22 +1017,6 @@ footer {
 
    .portfolio {
       background-color: #202430;
-
-      .btn-filter {
-         color: $white;
-         background-color: $blue;
-         transition: all 0.2s ease-out;
-
-         &.active {
-            background-color: $white;
-            color: $blue;
-         }
-
-         &:hover {
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            transform: translateY(-2px);
-         }
-      }
 
       .card-ri {
          box-shadow: none;
