@@ -360,7 +360,7 @@ section {
   gap: 28px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   background: rgba(255, 255, 255, 0.719);
   -webkit-backdrop-filter: blur(8px);
           backdrop-filter: blur(8px);
@@ -525,7 +525,7 @@ svg {
   align-items: center;
   background-color: #f7fafd;
 }
-.portfolio .btn-filter {
+.portfolio .filter-menu li {
   color: #4275fa;
   background-color: #fff;
   border: 2px #4275fa solid;
@@ -533,14 +533,28 @@ svg {
   border-radius: 50px;
   transition: all 0.3s ease-out;
 }
-.portfolio .btn-filter.active {
+.portfolio .filter-menu li:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+.portfolio .filter-menu li.current {
   border: 2px #4275fa solid;
   background-color: #4275fa;
   color: #fff;
 }
-.portfolio .btn-filter:hover {
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px);
+.portfolio .filter-item .card-filter {
+  width: 100%;
+  padding: 16px;
+}
+.portfolio .filter-item .card-filter.active {
+  width: 100%;
+  transition: all 0.5s ease;
+  padding: 16px 0;
+}
+.portfolio .filter-item .card-filter.delete {
+  width: 0;
+  padding: 0;
+  transition: all 0.5s ease;
 }
 .portfolio .card-ri {
   border-radius: 12px;
@@ -616,7 +630,7 @@ svg {
   padding: 24px 16px;
   position: relative;
 }
-.portfolio .card-ri .content .card-des {
+.portfolio .card-ri .content .card-desc {
   font-size: 14px;
   font-weight: 500;
   padding: 4px 12px;
@@ -762,6 +776,8 @@ footer .footer h6 {
     position: relative;
     background-color: transparent;
     border-top: none;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
   }
   .navbar-ri .navbar-nav .nav-link {
     color: #fff;
@@ -819,6 +835,13 @@ footer .footer h6 {
   }
   .portfolio .content .content-details h3 {
     font-size: 22px;
+  }
+  .portfolio .filter-item .card-filter {
+    width: 33%;
+  }
+  .portfolio .filter-item .card-filter.active {
+    width: 33%;
+    transition: all 0.5s ease;
   }
   .contact-wrapper {
     border-radius: 0 13px 13px 0;
