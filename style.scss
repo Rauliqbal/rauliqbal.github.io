@@ -518,44 +518,13 @@ svg {
    align-items: center;
    background-color: #f7fafd;
 
-   .filter-menu {
-      li {
-         color: $blue;
-         border: 2px $blue solid;
-         padding: 4px 16px;
-         border-radius: 50px;
-         transition: all 0.3s ease-out;
-
-         &:hover {
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-            transform: translateY(-4px);
-         }
-
-         &.current {
-            border: 2px $blue solid;
-            background-color: $blue;
-            color: $white;
-         }
-      }
+   .column {
+      padding: 8px;
+      display: none;
    }
 
-   .filter-item {
-      .card-filter {
-         width: 100%;
-         padding: 16px;
-
-         &.active {
-            width: 100%;
-            transition: all 0.5s ease;
-            padding: 16px;
-         }
-
-         &.delete {
-            width: 0;
-            padding: 0;
-            transition: all 0.5s ease;
-         }
-      }
+   .show {
+      display: block;
    }
 
    .card-ri {
