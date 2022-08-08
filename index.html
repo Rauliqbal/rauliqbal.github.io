@@ -75,7 +75,7 @@
                         <p class="desc text-white mt-4">Freelance Front-End Developer and UI Designer based in Bekasi, Indonesian. Let's Work Together.</p>
 
                         <div class="cta mt-4">
-                            <a class="btn btn-primary fw-bold rounded-pill" href="">Hire Me</a>
+                            <a class="btn btn-primary fw-bold rounded-pill" href="#portfolio">View my work</a>
                             <a class="btn btn-light fw-bold rounded-pill" href="">Get Cv</a>
                         </div>
                     </div>
@@ -288,16 +288,16 @@
                     <h3 class="title text-capitalize">Recent Works</h3>
                 </div>
 
-                <div class="text-center mt-4" id="myBtnContainer">
-                    <button class="btn btn-filter active"onclick="filterSelection('all')">All</button>
-                    <button class="btn btn-filter mx-2" onclick="filterSelection('web')">Web</button>
-                    <button class="btn btn-filter" onclick="filterSelection('design')">design</button>
+                <div class="text-center mt-4 filter-menu">
+                    <li class="btn btn-filter" data-target="all">All</li>
+                    <li class="btn btn-filter mx-2" data-target="web">Web</li>
+                    <li class="btn btn-filter" data-target="design">design</li>
                 </div>
 
-                <div class="row mt-5">
+                <div class="row mt-5 filter-item" data-aos="zoom-in" data-aos-delay="400">
 
                      <!-- Portfolio 1 -->
-                    <div class="column col-12 col-md-6 col-lg-4 " style="z-index: 2;"  data-aos="zoom-in" data-aos-delay="400" data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 web" data-item="web">
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/anonime-webdev.webp" alt="Anonime, anime movie streaming online" />
@@ -321,7 +321,7 @@
                     </div>
 
                      <!-- Portfolio 2 -->
-                    <div class="column col-12 col-md-6 col-lg-4 web" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="600"  data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 web" data-item="web">
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/letscook-webdev.webp" alt="My Design Website Competition By Beliayamcom " />
@@ -345,7 +345,7 @@
                     </div>
 
                     <!-- Portfolio 3 -->
-                    <div class="column col-12 col-md-6 col-lg-4 web" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="800"  data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 web" data-item="web">
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/lenterahouse-webdev.webp" alt="Lentera House Landing page , design by buildwithangga" />
@@ -369,7 +369,7 @@
                     </div>
                     
                     <!-- Portfolio 4 -->
-                    <div class="column col-12 col-md-6 col-lg-4 web" style="z-index: 2;" data-aos="zoom-in"  data-aos-delay="400"  data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 web" data-item="web">
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/craftyfurniture-webdev.webp" alt="Crafty Furniture App " />
@@ -393,7 +393,7 @@
                     </div>
 
                     <!-- Portfolio 5 -->
-                    <div class="column col-12 col-md-6 col-lg-4 web" style="z-index: 2;" data-aos="zoom-in"  data-aos-delay="600"  data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 web" data-item="web">
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/travel-landingpage.png" alt="Photo Travel Web Landing Page " />
@@ -417,7 +417,7 @@
                     </div>
 
                     <!-- Portfolio 6 -->
-                    <div class="column col-12 col-md-6 col-lg-4 web" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="800"  data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 web" data-item="web" >
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/beliayam-webdev.png" alt="Photo BeliAyam Website " />
@@ -441,7 +441,7 @@
                     </div>
 
                     <!-- Portfolio 7 -->
-                    <div class="column col-12 col-md-6 col-lg-4 design" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="400"  data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 design" data-item="design" >
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/managemoney-appdesign.png" alt="Photo Manage Money App Design " />
@@ -463,7 +463,7 @@
                     </div>
 
                      <!-- Portfolio 8 -->
-                     <div class="column col-12 col-md-6 col-lg-4 design" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="600"  data-aos-duration="600">
+                     <div class="column col-12 col-md-6 col-lg-4 design" data-item="design" >
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/needfood-appdesign.png" alt="Photo NeedFood App Design " />
@@ -485,7 +485,7 @@
                     </div>
 
                      <!-- Portfolio 9 -->
-                     <div class="column col-12 col-md-6 col-lg-4 design" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="800"  data-aos-duration="600">
+                     <div class="column col-12 col-md-6 col-lg-4 design" data-item="design" >
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/travel-appdesign.png" alt="Photo Travel App Design " />
@@ -507,7 +507,7 @@
                     </div>
 
                     <!-- Portfolio 10 -->
-                     <div class="column col-12 col-md-6 col-lg-4 web" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="400"  data-aos-duration="600">
+                     <div class="column col-12 col-md-6 col-lg-4 web" data-item="web" >
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/clipboard-landingpage.png" alt="Photo Clipboard Landing Page " />
@@ -531,7 +531,7 @@
                     </div>
                     
                     <!-- Portfolio 11 -->
-                    <div class="column col-12 col-md-6 col-lg-4 design" style="z-index: 2;"  data-aos="zoom-in"  data-aos-delay="800"  data-aos-duration="600">
+                    <div class="column col-12 col-md-6 col-lg-4 design" data-item="design" >
                         <div class="card-ri">
                             <div class="card-top">
                                 <img src="images/portfolio/travel-webdesign.png" alt="Photo Travel App Design " />
@@ -551,12 +551,34 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Portfolio 12 -->
+                    <div class="column col-12 col-md-6 col-lg-4 design" data-item="design" >
+                        <div class="card-ri">
+                            <div class="card-top">
+                                <img src="images/portfolio/cafestreet-webdesign.png" alt="Photo Cafe Street Web Design " />
+                                <div class="overlay"></div>
+                                <div class="content-details fadeIn-bottom">
+                                    <!-- Live Preview Icons -->
+                                    <a href="https://www.figma.com/community/file/1138256358581554095" target="_blank"><i class="icons bx bx-link-external"></i></a>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <span class="card-desc">Design</span>
+                                <h3 class="card-title">Cafe Street Web Design</h3>
+                                <div class="card-social">
+                                 
+                                 <img src="./images/figma-icon.svg" alt="figma icon">
+                             </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
                </div>
             </div>
         </section>
-
+        
         <!-- ==========CONTACT========== -->
         <section class="contact" id="contact">
             <h4 class="section-title text-uppercase text-center">Contact Me</h4>

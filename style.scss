@@ -518,13 +518,27 @@ svg {
    align-items: center;
    background-color: #f7fafd;
 
-   .column {
-      padding: 8px;
-      display: none;
+   .filter-item .column {
+      width: 100%;
+      padding: 16px;
    }
 
-   .show {
+   .filter-item .column.active {
+      width: 100%;
+      padding: 16px;
+      transition: all 0.5s ease;
+   }
+
+   .filter-item .column.delete {
+      width: 0%;
+      padding: 0;
+      transition: all 0.5s ease;
+   }
+
+   .filter-item img {
       display: block;
+      width: 100%;
+      height: 100%;
    }
 
    .card-ri {
@@ -585,13 +599,6 @@ svg {
             opacity: 0;
             transform: translate(-50%, -50%);
 
-            h3 {
-               color: $white;
-               font-weight: 600;
-               text-transform: capitalize;
-               font-size: 20px;
-            }
-
             .icons {
                font-size: 24px;
                padding: 8px;
@@ -625,7 +632,7 @@ svg {
          }
 
          .card-title {
-            font-size: 22px;
+            font-size: 20px;
             color: $black;
          }
 
@@ -882,7 +889,7 @@ footer {
       }
 
       .filter-item {
-         .card-filter {
+         .column {
             width: 33%;
 
             &.active {
