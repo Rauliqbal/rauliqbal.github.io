@@ -36,7 +36,7 @@
 
 .btn-blue {
   color: #fff;
-  background: transparent;
+  background: #4275fa;
   padding: 10px 32px;
   border-radius: 32px;
   transition: all 0.2s ease-in-out;
@@ -558,16 +558,16 @@ svg {
   background-color: #f7fafd;
 }
 .portfolio .filter-item .column {
-  width: 100%;
+  display: block;
   padding: 16px;
 }
 .portfolio .filter-item .column.active {
-  width: 100%;
+  display: block;
   padding: 16px;
   transition: all 0.5s ease;
 }
 .portfolio .filter-item .column.delete {
-  width: 0%;
+  display: none;
   padding: 0;
   transition: all 0.5s ease;
 }

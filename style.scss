@@ -519,18 +519,18 @@ svg {
    background-color: #f7fafd;
 
    .filter-item .column {
-      width: 100%;
+      display: block;
       padding: 16px;
    }
 
    .filter-item .column.active {
-      width: 100%;
+      display: block;
       padding: 16px;
       transition: all 0.5s ease;
    }
 
    .filter-item .column.delete {
-      width: 0%;
+      display: none;
       padding: 0;
       transition: all 0.5s ease;
    }
