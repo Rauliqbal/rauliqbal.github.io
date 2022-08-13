@@ -389,7 +389,7 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  gap: 28px;
+  gap: 14px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -539,8 +539,13 @@ svg {
   color: #4275fa;
   text-transform: uppercase;
 }
-.resume .resume-item h5 {
-  font-size: 16px;
+.resume .resume-item button {
+  font-size: 18px;
+  border: none;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #4275fa;
 }
 
 .skills {
