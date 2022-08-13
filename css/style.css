@@ -399,7 +399,7 @@ section {
   border-top: 2px solid #5783e2;
 }
 .navbar-ri .navbar-nav .nav-link {
-  color: #4275fa;
+  color: #596570;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -415,6 +415,9 @@ section {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.06em;
+}
+.navbar-ri .navbar-nav .nav-link.active {
+  color: #4275fa;
 }
 
 .hero {
@@ -504,6 +507,40 @@ svg {
 }
 .about .card .card-subtitle span {
   color: #7e7e7e;
+}
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 16px;
+  color: #2e2d56;
+}
+.resume .resume-item {
+  border-left: 2px solid #4275fa;
+  padding: 0 0 20px 20px;
+  position: relative;
+}
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background-color: #fff;
+  border: 3px solid #4275fa;
+}
+.resume .resume-item h4 {
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #4275fa;
+  text-transform: uppercase;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
 }
 
 .skills {
@@ -749,7 +786,7 @@ footer .footer h6 {
     padding: 18px 9%;
   }
   .navbar-ri .nav-link.active {
-    color: #2e2d56;
+    color: #4275fa;
     font-weight: 600;
   }
   .navbar-ri.sticky {
@@ -783,8 +820,7 @@ footer .footer h6 {
     background-color: #042f9f;
   }
   .navbar-ri.sticky .navbar-nav .nav-link.active {
-    color: #2e2d56;
-    font-weight: 600;
+    color: #39378f;
   }
   .navbar-ri .navbar-nav {
     position: relative;
@@ -886,7 +922,7 @@ footer .footer h6 {
   background-color: #1f212c;
 }
 .darkmode .navbar-ri .navbar-nav .nav-link.active {
-  color: #26376d;
+  color: #4275fa;
 }
 .darkmode .waves {
   fill: #1f212c;

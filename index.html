@@ -8,15 +8,19 @@
         <meta name="keywords" content="Rauliqbal, rauliqbal">
         <meta name="theme-color" content="#4275fa">
         <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+        <title>Rauliqbal - Resume</title>
+
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
         <!-- AOS JS -->
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!-- CUSTOM CSS -->
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/style.min.css" />
         <!-- Boxicons CSS -->
         <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-        <title>Rauliqbal - Site</title>
+        
+        
+       
     </head>
     <body class="loading">
         
@@ -26,11 +30,11 @@
         </a>
 
         <!-- =========Preloader========= -->
-        <div id="preloader">
+        <!-- <div id="preloader">
            <div class="d-flex justify-content-center align-items-center h-100">
             <h2>Rauliqbal...</h2>
            </div>
-        </div>
+        </div> -->
 
         <!-- ==========Navbar========== -->
         <nav class="navbar-ri ">
@@ -39,6 +43,10 @@
                     <a class="nav-link" href="#about">
                         <i class='icons bx bxs-user'></i>
                         <span>About</span>
+                    </a>
+                    <a class="nav-link" href="#resume">
+                        <i class='icons bx bxs-detail'></i>
+                        <span>Resume</span>
                     </a>
                     <a class="nav-link" href="#skills">
                         <i class='icons bx bxs-star'></i>
@@ -68,9 +76,9 @@
         <section class="hero">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6 align-self-center" data-aos="fade-up" data-aos-duration="1000" >
+                    <div class="col-12 col-lg-6 align-self-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000" >
                         <h1 class="text-uppercase text-white">hello, im rauliqbal</h1>
-                        <h2 class="sub-title text-white">WEB DESIGNER</h2>
+                        <h2 class="sub-title text-white"><span class="type"></span></h2>
                         <hr class="bg-white" />
                         <p class="desc text-white mt-4">Freelance Front-End Developer and UI Designer based in Bekasi, Indonesian. Let's Work Together.</p>
 
@@ -109,10 +117,10 @@
         <section class="about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000">
                         <img class="img-fluid" src="images/about-img.png" alt="i am Muhamad Raul Iqbal a web designer" />
                     </div>
-                    <div class="col-12 col-lg-6 mt-5 mt-lg-0 align-self-center" data-aos="fade-down" data-aos-duration="1500">
+                    <div class="col-12 col-lg-6 mt-5 mt-lg-0 align-self-center" data-aos-delay="800" data-aos="fade-down" data-aos-duration="1500">
                         <h4 class="section-title text-uppercase" >About me</h4>
                         <h3 class="title text-capitalize">Web Designer</h3>
                         <p class="desc">Hello, my name is Raul Iqbal, I am a Front End Developer and UI Designer, I am used to making projects with Vue JS and Tailwind CSS, I use git as version control and github to store my project source code.</p>
@@ -159,14 +167,48 @@
             </div>
         </section>
         
-        <!-- ===========RESUME===========
+        <!-- ===========RESUME=========== -->
         <section class="resume" id="resume">
             <div class="container">
+                <div class="text-center">
+                    <h4 class="section-title text-uppercase">MY RESUME</h4>
+                    <h3 class="title text-capitalize">Recent Works</h3>
+                </div>
                 <div class="row">
-                    <div class="col-12 col-lg-6"></div>
+                    <div class="col-12 col-lg-6">
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>SMK 11 MARET </h4>
+                            <h5>2019 - 2021</h5>
+                            <p><em>Teknik Komputer dan Jaringan</em></p>
+                        </div>
+
+                        <div class="resume-item pb-0">
+                            <h4>MTS AL-IMAROH </h4>
+                            <h5>2017 - 2019</h5>
+                        </div>
+
+                        <h3 class="resume-title">Sertifikat</h3>
+                        <div class="resume-item">
+                            <h4>buildwith angga </h4>
+                            <h5>2021</h5>
+                            <p><em>Full-Stack Website Designer 2021</em></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>dicoding </h4>
+                            <h5>2021</h5>
+                            <p><em>Dasar Pemograman Web</em></p>
+                        </div>
+                        <div class="resume-item pb-0">
+                            <h4>dicoding </h4>
+                            <h5>2022</h5>
+                            <p><em>Front-End Web Pemula</em></p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <!-- ==========SKILSS=========== -->
         <section class="skills" id="skills">
@@ -174,12 +216,12 @@
                 <div class="row">
                     <div class="col-12 col-lg-10 mx-auto">
                         <div class="row">
-                            <div class="col-12 col-lg-7 align-self-center pe-4"  data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <div class="col-12 col-lg-7 align-self-center pe-4"  data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
                                 <h4 class="section-title text-uppercase">what i do</h4>
                                 <h3 class="title text-capitalize">specializing in</h3>
                                 <p class="desc">I always prioritize the quality and convenience of consumers to create an attractive and fast website.</p>
                             </div>
-                            <div class="col-12 col-lg-5" data-aos="fade-down" data-aos-delay="600" data-aos-duration="600">
+                            <div class="col-12 col-lg-5" data-aos="fade-down" data-aos-delay="800" data-aos-duration="600">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="card">
@@ -200,28 +242,28 @@
                                                                 <h5 class="text-center">Front-End Developer</h5>
 
                                                                 <div class="row mt-4">
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                        <img class="w-50" src="/images/html-icon.svg">
                                                                     </div>
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                         <img class="w-50" src="/images/css-icon.svg">
                                                                     </div>
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                         <img class="w-50" src="/images/js-icon.svg">
                                                                     </div>
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                         <img class="w-50" src="/images/sass-icon.svg">
                                                                     </div>
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                         <img class="w-50" src="/images/bootstrap-icon.svg">
                                                                     </div>
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                         <img class="w-50" src="/images/tailwind-icon.svg">
                                                                     </div>
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                         <img class="w-50" src="/images/vue-icon.svg">
                                                                     </div>
-                                                                    <div class="col-6 col-lg-3 d-flex flex-column align-items-center py-3">
+                                                                    <div class="col-4 col-lg-3 d-flex flex-column align-items-center py-3">
                                                                         <img class="w-50" src="/images/nuxt-icon.svg">
                                                                     </div>
                                                                 </div>
@@ -245,12 +287,9 @@
                                                 <div class="modal fade" id="uiDesignModal">
                                                     <div class="modal-dialog modal-dialog-centered">
                                                         <div class="modal-content">
-                                                            <div class="modal-header">
-                                                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                            </div>
+                                                            
                                                             <div class="modal-body">
-                                                                <h5 class="text-center">Front-End Developer</h5>
+                                                                <h5 class="text-center">UI/UX Designer</h5>
 
                                                                 <div class="row mt-4">
                                                                     <div class="col-6 col-lg-3 text-center py-3">
@@ -648,7 +687,7 @@
                                 </div>
                             </div>
                             
-                            <button type="submit" class="btn btn-blue mt-4">Send Message</button>
+                            <button type="submit" class="btn btn-outline-primary rounded-pill mt-4">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -672,6 +711,15 @@
         <script src="js/filtering.js"></script>
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
+        <script src="/js/typed.js"></script>
+        <script>
+            var typed3 = new Typed('.type', {
+            strings: ['Front-End Dev', 'UI Designer'],
+            typeSpeed: 60,
+            backSpeed: 60,
+            smartBackspace: true, // this is a default
+            loop: true
+        });
+        </script>
     </body>
 </html>

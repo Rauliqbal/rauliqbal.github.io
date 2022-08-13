@@ -297,7 +297,7 @@ section {
       border-top: 2px solid #5783e2;
 
       .nav-link {
-         color: $blue;
+         color: #596570;
          position: relative;
          display: flex;
          flex-direction: column;
@@ -315,6 +315,10 @@ section {
             font-size: 12px;
             font-weight: 500;
             letter-spacing: 0.06em;
+         }
+
+         &.active {
+            color: $blue;
          }
       }
    }
@@ -423,6 +427,45 @@ svg {
          span {
             color: #7e7e7e;
          }
+      }
+   }
+}
+
+.resume {
+   .resume-title {
+      font-size: 26px;
+      font-weight: 600;
+      margin-top: 28px;
+      margin-bottom: 16px;
+      color: $black;
+   }
+   .resume-item {
+      border-left: 2px solid $blue;
+      padding: 0 0 20px 20px;
+      position: relative;
+
+      &::before {
+         content: "";
+         position: absolute;
+         width: 16px;
+         height: 16px;
+         border-radius: 50px;
+         left: -9px;
+         top: 0;
+         background-color: #fff;
+         border: 3px solid $blue;
+      }
+
+      h4 {
+         font-size: 22px;
+         line-height: 22px;
+         font-weight: 600;
+         color: $blue;
+         text-transform: uppercase;
+      }
+
+      h5 {
+         font-size: 16px;
       }
    }
 }
@@ -748,7 +791,7 @@ footer {
       padding: 18px 9%;
 
       .nav-link.active {
-         color: #2e2d56;
+         color: $blue;
          font-weight: 600;
       }
 
@@ -786,8 +829,7 @@ footer {
             }
 
             .nav-link.active {
-               color: #2e2d56;
-               font-weight: 600;
+               color: #39378f;
 
                // &::after {
                //    transform: scaleX(1);
@@ -941,7 +983,7 @@ footer {
       .navbar-nav {
          .nav-link {
             &.active {
-               color: #26376d;
+               color: $blue;
             }
          }
       }
