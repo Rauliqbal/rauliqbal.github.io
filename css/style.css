@@ -512,13 +512,13 @@ svg {
 .resume .resume-title {
   font-size: 26px;
   font-weight: 600;
-  margin-top: 28px;
+  margin-top: 32px;
   margin-bottom: 16px;
   color: #2e2d56;
 }
 .resume .resume-item {
   border-left: 2px solid #4275fa;
-  padding: 0 0 20px 20px;
+  padding: 0 0 16px 20px;
   position: relative;
 }
 .resume .resume-item::before {
@@ -532,7 +532,8 @@ svg {
   background-color: #fff;
   border: 3px solid #4275fa;
 }
-.resume .resume-item h4 {
+.resume .resume-item h4,
+.resume .resume-item button {
   font-size: 22px;
   line-height: 22px;
   font-weight: 600;
@@ -543,9 +544,16 @@ svg {
   font-size: 18px;
   border: none;
   background-color: #fff;
-  text-transform: uppercase;
-  font-weight: 600;
-  color: #4275fa;
+  transition: 0.1s;
+}
+.resume .resume-item button:hover {
+  color: #384b70;
+}
+.resume .resume-item .resume-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
 
 .skills {
